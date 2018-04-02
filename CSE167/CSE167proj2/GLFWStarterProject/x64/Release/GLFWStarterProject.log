@@ -1,0 +1,9 @@
+﻿  OBJObject.cpp
+..\OBJObject.cpp(189): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+  Generating code
+  30 of 430 functions ( 7.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    6 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  GLFWStarterProject.vcxproj -> C:\Users\Andrew\Desktop\School\Computer Science\CSE 167\CSE167StarterCode2-master\CSE167StarterCode2-master\x64\Release\GLFWStarterProject.exe
+  GLFWStarterProject.vcxproj -> C:\Users\Andrew\Desktop\School\Computer Science\CSE 167\CSE167StarterCode2-master\CSE167StarterCode2-master\x64\Release\GLFWStarterProject.pdb (Full PDB)
