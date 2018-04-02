@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" android:background="@color/background_color" tools:context=".Start">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/edit_expense_outer_container"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="32sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:id="@+id/edit_name_layout">
+            <TextView android:text="Name:" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" android:textSize="20sp"
+                android:layout_marginLeft="5dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/edit_expense_name"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white"
+                android:backgroundTint="@color/white"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:ems="4"
+                android:maxEms="6"
+                android:inputType="text"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:id="@+id/edit_category_layout"
+            android:weightSum="1">
+            <TextView android:text="Category:" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" android:textSize="20sp"
+                android:layout_marginLeft="5dp"/>
+
+            <Spinner
+                android:layout_width="113dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/edit_category_button" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="17dp"
+            android:id="@+id/edit_cost_layout">
+            <TextView android:text="Cost:" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" android:textSize="20sp"
+                android:layout_marginLeft="5dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/edit_expense_amount"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white"
+                android:backgroundTint="@color/white"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:ems="4"
+                android:maxEms="6"
+                android:inputType="numberDecimal"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="18dp"
+            android:id="@+id/edit_date_layout">
+            <TextView android:text="Date:" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" android:textSize="20sp"
+                android:layout_marginLeft="5dp"/>
+            <Button
+                android:id="@+id/edit_expense_date_button"
+                android:onClick="editDateButtonOnClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/round_button"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="19dp"
+            android:id="@+id/edit_buttons_layout">
+            <Button
+                android:text="CANCEL"
+                android:id="@+id/edit_cancel_button"
+                android:onClick="cancelButtonOnClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:background="@drawable/white_border"/>
+            <Button
+                android:text="SAVE"
+                android:id="@+id/edit_save_button"
+                android:onClick="saveChangesButtonOnClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:background="@drawable/white_border"/>
+            <Button
+                android:text="DELETE"
+                android:id="@+id/edit_delete_button"
+                android:onClick="deleteExpenseButtonOnClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:background="@drawable/white_border"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

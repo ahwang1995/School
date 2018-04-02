@@ -1,0 +1,233 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Start"
+    android:background="@color/background_color">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chart"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:id="@+id/chartButton"
+        android:onClick="chartButtonClick"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/white_border" />
+
+    <TextView android:id="@+id/total_money_textview" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp" android:textColor="@color/white" android:textSize="50sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="175dp">
+
+        <TextView android:text="@string/dollarsign" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white" android:textSize="25sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/enter_expense_amount"
+            android:hint="0.00"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:ems="4"
+            android:maxEms="6"
+            android:inputType="numberDecimal" />
+
+        <TextView android:text="@string/on" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/enter_expense_label"
+            android:hint="Item Name"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:ems="5"
+            android:maxEms="6"
+            android:inputType="text"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp">
+
+        <TextView android:text="@string/on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp" />
+
+        <Spinner
+            android:id="@+id/catigory_picker"
+            android:spinnerMode="dropdown"
+            android:layout_width="100dp"
+            android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:text="@string/Enter_expense"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enter_expense_button"
+        android:onClick="Enter_Expense"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/white_border"
+        android:layout_marginTop="250dp" />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_expense_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/outerExpenseContainer">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="1dp"
+                android:id="@+id/name_column"
+                android:maxEms="8"
+                android:layout_marginLeft="-7dp"
+                android:layout_marginRight="-7dp">
+                <Button
+                    android:text="Name"
+                    android:id="@+id/name_button"
+                    android:onClick="tableButtonClick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/name_column_inner"></LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="1dp"
+                android:id="@+id/cost_column"
+                android:maxEms="8"
+                android:layout_marginLeft="-7dp"
+                android:layout_marginRight="-7dp">
+                <Button
+                    android:text="Cost"
+                    android:id="@+id/cost_button"
+                    android:onClick="tableButtonClick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/cost_column_inner"></LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="1dp"
+                android:id="@+id/category_column"
+                android:maxEms="10"
+                android:layout_marginLeft="-7dp"
+                android:layout_marginRight="-7dp">
+                <Button
+                    android:text="Category"
+                    android:id="@+id/category_button"
+                    android:onClick="tableButtonClick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/category_column_inner"></LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="1dp"
+                android:id="@+id/date_column"
+                android:minEms="10"
+                android:layout_marginLeft="-7dp"
+                android:layout_marginRight="0dp">
+                <Button
+                    android:text="Date"
+                    android:id="@+id/date_button"
+                    android:onClick="tableButtonClick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/date_column_inner"
+                    android:minEms="8">
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <TextView android:id="@+id/display" android:layout_width="wrap_content"
+        android:text=""
+        android:layout_height="wrap_content"
+        android:textColor="@color/white" android:textSize="15sp" />
+
+</RelativeLayout>
