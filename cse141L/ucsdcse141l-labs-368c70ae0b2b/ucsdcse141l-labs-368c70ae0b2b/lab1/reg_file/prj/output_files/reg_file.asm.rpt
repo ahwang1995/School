@@ -1,0 +1,91 @@
+Assembler report for reg_file
+Fri Jan 22 04:53:31 2016
+Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Assembler Summary
+  3. Assembler Settings
+  4. Assembler Generated Files
+  5. Assembler Device Options: C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/lab1/reg_file/prj/output_files/reg_file.sof
+  6. Assembler Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; Assembler Summary                                             ;
++-----------------------+---------------------------------------+
+; Assembler Status      ; Successful - Fri Jan 22 04:53:31 2016 ;
+; Revision Name         ; reg_file                              ;
+; Top-level Entity Name ; reg_file                              ;
+; Family                ; Cyclone V                             ;
+; Device                ; 5CGXFC7C7F23C8                        ;
++-----------------------+---------------------------------------+
+
+
++----------------------------------+
+; Assembler Settings               ;
++--------+---------+---------------+
+; Option ; Setting ; Default Value ;
++--------+---------+---------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                                                                                        ;
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                                                                        ;
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/lab1/reg_file/prj/output_files/reg_file.sof ;
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/lab1/reg_file/prj/output_files/reg_file.sof ;
++----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                                                                                   ;
++----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Device         ; 5CGXFC7C7F23C8                                                                                                                                                            ;
+; JTAG usercode  ; 0x0123132F                                                                                                                                                                ;
+; Checksum       ; 0x0123132F                                                                                                                                                                ;
++----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------+
+; Assembler Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Assembler
+    Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+    Info: Processing started: Fri Jan 22 04:53:12 2016
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off reg_file -c reg_file
+Info (115030): Assembler is generating device programming files
+Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 767 megabytes
+    Info: Processing ended: Fri Jan 22 04:53:31 2016
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:20
+
+

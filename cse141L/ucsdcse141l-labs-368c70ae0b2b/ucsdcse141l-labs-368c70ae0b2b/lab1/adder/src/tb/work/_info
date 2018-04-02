@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/lab1/adder/src/tb
+vadder
+Z1 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+Z2 !s110 1453461539
+!i10b 1
+!s100 jlb9k@5oao4Vg0d8`KHo>3
+IYbV;]>nE07E11nB1KgFP`3
+Z3 V`JN@9S9cnhjKRR_L]QIcM3
+!s105 adder_sv_unit
+S1
+R0
+w1453461395
+8../adder.sv
+F../adder.sv
+L0 7
+Z4 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1453461539.302000
+!s107 ../adder.sv|
+!s90 -reportprogress|300|-work|work|../adder.sv|
+!i113 1
+Z5 o-work work
+vadder_tb
+R1
+R2
+!i10b 1
+!s100 izQ0O1kVPmR@9nfQ5lD690
+IS37bV]D66LzIll[S;X]190
+R3
+!s105 adder_tb_sv_unit
+S1
+R0
+w1453451915
+8adder_tb.sv
+Fadder_tb.sv
+L0 15
+R4
+r1
+!s85 0
+31
+!s108 1453461539.379000
+!s107 adder_tb.sv|
+!s90 -reportprogress|300|-work|work|adder_tb.sv|
+!i113 1
+R5

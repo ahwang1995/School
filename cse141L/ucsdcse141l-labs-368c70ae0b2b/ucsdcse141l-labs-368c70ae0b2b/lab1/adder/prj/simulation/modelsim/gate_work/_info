@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/lab1/adder/prj/simulation/modelsim
+vadder
+Z1 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+!s110 1453457985
+!i10b 1
+!s100 <JKFACZiAdPzFJ]=UM@iJ2
+IFY5]@h4N6?9m5RGUD>>Ri2
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+!s105 adder_sv_unit
+S1
+R0
+Z3 w1453451915
+8C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/lab1/adder/src/adder.sv
+FC:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/lab1/adder/src/adder.sv
+L0 7
+Z4 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1453457985.445000
+!s107 C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/lab1/adder/src/adder.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/lab1/adder/src/adder.sv|
+!i113 1
+Z5 o-work work
+vadder_tb
+R1
+!s110 1453457971
+!i10b 1
+!s100 izQ0O1kVPmR@9nfQ5lD690
+IoGgKZV:@Zz1RQ9L_LB6e<1
+R2
+!s105 adder_tb_sv_unit
+S1
+R0
+R3
+8C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/lab1/adder/src/tb/adder_tb.sv
+FC:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/lab1/adder/src/tb/adder_tb.sv
+L0 15
+R4
+r1
+!s85 0
+31
+!s108 1453457971.926000
+!s107 C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/lab1/adder/src/tb/adder_tb.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/lab1/adder/src/tb/adder_tb.sv|
+!i113 1
+R5

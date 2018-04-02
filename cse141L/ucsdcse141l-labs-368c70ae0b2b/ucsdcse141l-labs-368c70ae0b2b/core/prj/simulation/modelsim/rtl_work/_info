@@ -1,0 +1,302 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/prj/simulation/modelsim
+valu
+Z1 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+Z2 DXx4 work 11 definitions 0 22 2]UQ5b;TnG9H?NU2m24kl3
+DXx4 work 11 alu_sv_unit 0 22 X289M?YmjJ2obIDAX;J1=1
+Z3 V`JN@9S9cnhjKRR_L]QIcM3
+r1
+!s85 0
+31
+!i10b 1
+!s100 P:Nm@g1_QTnDFP4FocSn80
+IH5DZ1D3VL0Jc4[b8=JEYj3
+!s105 alu_sv_unit
+S1
+R0
+Z4 w1453451915
+Z5 8C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/alu.sv
+Z6 FC:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/alu.sv
+L0 4
+Z7 OV;L;10.3d;59
+Z8 !s108 1453532453.134000
+Z9 !s107 C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/alu.sv|
+Z10 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src|C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/alu.sv|
+!i113 1
+Z11 o-sv -work work
+Z12 !s92 -sv -work work {+incdir+C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src}
+Xalu_sv_unit
+R1
+R2
+VX289M?YmjJ2obIDAX;J1=1
+r1
+!s85 0
+31
+!i10b 1
+!s100 <JZIaAjWXa9OELhd]nVI;0
+IX289M?YmjJ2obIDAX;J1=1
+!i103 1
+S1
+R0
+R4
+R5
+R6
+L0 2
+R7
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vcl_decode
+R1
+R2
+DXx4 work 17 cl_decode_sv_unit 0 22 :YUDz5I>hcBmZ;A;Id;7d1
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 IEI7:FdAWeIaY4<gbNIoz2
+I2X@d^aa4Kz?HeUGco7eh81
+!s105 cl_decode_sv_unit
+S1
+R0
+R4
+Z13 8C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/cl_decode.sv
+Z14 FC:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/cl_decode.sv
+L0 4
+R7
+Z15 !s108 1453532453.014000
+Z16 !s107 C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/cl_decode.sv|
+Z17 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src|C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/cl_decode.sv|
+!i113 1
+R11
+R12
+Xcl_decode_sv_unit
+R1
+R2
+V:YUDz5I>hcBmZ;A;Id;7d1
+r1
+!s85 0
+31
+!i10b 1
+!s100 m=kbU^j`zRoTP1_GO@4Wn2
+I:YUDz5I>hcBmZ;A;Id;7d1
+!i103 1
+S1
+R0
+R4
+R13
+R14
+L0 1
+R7
+R15
+R16
+R17
+!i113 1
+R11
+R12
+vcl_state_machine
+R1
+R2
+DXx4 work 24 cl_state_machine_sv_unit 0 22 1WGL;`GN?>lmoZ5C7gDU>0
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 4oE:EkCkM<kh4;jo<d;N90
+ISXe`JMP4hz68n7e?gJ56X2
+!s105 cl_state_machine_sv_unit
+S1
+R0
+R4
+Z18 8C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/cl_state_machine.sv
+Z19 FC:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/cl_state_machine.sv
+L0 3
+R7
+Z20 !s108 1453532452.739000
+Z21 !s107 C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/cl_state_machine.sv|
+Z22 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src|C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/cl_state_machine.sv|
+!i113 1
+R11
+R12
+Xcl_state_machine_sv_unit
+R1
+R2
+V1WGL;`GN?>lmoZ5C7gDU>0
+r1
+!s85 0
+31
+!i10b 1
+!s100 XAG2Z0PlRPWcOi=2SB8?D1
+I1WGL;`GN?>lmoZ5C7gDU>0
+!i103 1
+S1
+R0
+R4
+R18
+R19
+L0 1
+R7
+R20
+R21
+R22
+!i113 1
+R11
+R12
+vcore
+R1
+R2
+DXx4 work 12 core_sv_unit 0 22 j0JP0oIc9383NbAa_QfBX0
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 QN5?^@PWj3Z6MAhzZ?1@D2
+Io<CU`OEACT^4@TCS<Lbj51
+!s105 core_sv_unit
+S1
+R0
+R4
+Z23 8C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/core.sv
+Z24 FC:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/core.sv
+L0 12
+R7
+Z25 !s108 1453532452.486000
+Z26 !s107 C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/core.sv|
+Z27 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src|C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/core.sv|
+!i113 1
+R11
+R12
+Xcore_sv_unit
+R1
+R2
+Vj0JP0oIc9383NbAa_QfBX0
+r1
+!s85 0
+31
+!i10b 1
+!s100 W0B;GBWD`BU<Pc?dKTTm31
+Ij0JP0oIc9383NbAa_QfBX0
+!i103 1
+S1
+R0
+R4
+R23
+R24
+L0 1
+R7
+R25
+R26
+R27
+!i113 1
+R11
+R12
+Xdefinitions
+R1
+Z28 !s110 1453532452
+!i10b 1
+!s100 WWZC=E2IU:VoSCL1UFb5Z2
+I2]UQ5b;TnG9H?NU2m24kl3
+V2]UQ5b;TnG9H?NU2m24kl3
+S1
+R0
+R4
+8C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/definitions.sv
+FC:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/definitions.sv
+L0 2
+R7
+r1
+!s85 0
+31
+!s108 1453532452.181000
+!s107 C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/definitions.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src|C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/definitions.sv|
+!i113 1
+R11
+R12
+vinstr_mem
+R1
+R2
+DXx4 work 17 instr_mem_sv_unit 0 22 bA@3kbjSOmjCXKUc2U0LF2
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 8NE>@j9F8ioFF`jPoJjB53
+ITc[jf57>aIG1NL;[hYTVO3
+!s105 instr_mem_sv_unit
+S1
+R0
+R4
+Z29 8C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/instr_mem.sv
+Z30 FC:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/instr_mem.sv
+L0 4
+R7
+Z31 !s108 1453532452.387000
+Z32 !s107 C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/instr_mem.sv|
+Z33 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src|C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/instr_mem.sv|
+!i113 1
+R11
+R12
+Xinstr_mem_sv_unit
+R1
+R2
+VbA@3kbjSOmjCXKUc2U0LF2
+r1
+!s85 0
+31
+!i10b 1
+!s100 ?ka<0nMZQMz0A@lj9=S?_3
+IbA@3kbjSOmjCXKUc2U0LF2
+!i103 1
+S1
+R0
+R4
+R29
+R30
+L0 1
+R7
+R31
+R32
+R33
+!i113 1
+R11
+R12
+vreg_file
+R1
+R28
+!i10b 1
+!s100 IlHO@G4m<K>[A<D@ChHUP3
+I@UZ7Ma`WGBhmUgc<OHa@Z2
+R3
+!s105 reg_file_sv_unit
+S1
+R0
+R4
+8C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/reg_file.sv
+FC:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/reg_file.sv
+L0 2
+R7
+r1
+!s85 0
+31
+!s108 1453532452.065000
+!s107 C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/reg_file.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src|C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/reg_file.sv|
+!i113 1
+R11
+R12

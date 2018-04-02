@@ -1,0 +1,61 @@
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do fifo_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+C:/Users/Andrew/Desktop/School/Computer\ Science/cse\ 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/lab1/fifo/src {C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/lab1/fifo/src/fifo.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 06:36:42 on Jan 22,2016
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/lab1/fifo/src" C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/lab1/fifo/src/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 06:36:42 on Jan 22,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+cd {C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/lab1/fifo/src/tb}
+# reading C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini
+source compile.tcl
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 06:37:15 on Jan 22,2016
+# vlog -reportprogress 300 -work work ../fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 06:37:15 on Jan 22,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 06:37:15 on Jan 22,2016
+# vlog -reportprogress 300 -work work fifo_tb.sv 
+# -- Compiling module fifo_tb
+# 
+# Top level modules:
+# 	fifo_tb
+# End time: 06:37:15 on Jan 22,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+source sim.tcl
+# vsim -gui "+altera" -l msim_transcript -do "fifo_run_msim_rtl_verilog.do" 
+# Start time: 06:37:18 on Jan 22,2016
+# Loading sv_std.std
+# Loading work.fifo_tb
+# Loading work.fifo
+run -all
+# error: wrote full fifo
+# error: deque empty fifo
+# All tests passed!
+# ** Note: $stop    : fifo_tb.sv(95)
+#    Time: 80 ns  Iteration: 1  Instance: /fifo_tb
+# Break in Module fifo_tb at fifo_tb.sv line 95
+# End time: 06:37:35 on Jan 22,2016, Elapsed time: 0:00:17
+# Errors: 0, Warnings: 0

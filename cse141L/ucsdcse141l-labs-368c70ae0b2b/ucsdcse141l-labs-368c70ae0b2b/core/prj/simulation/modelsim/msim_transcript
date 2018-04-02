@@ -1,0 +1,279 @@
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do core_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+C:/Users/Andrew/Desktop/School/Computer\ Science/cse\ 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src {C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/reg_file.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:00:52 on Jan 22,2016
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src" C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/reg_file.sv 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 23:00:52 on Jan 22,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Andrew/Desktop/School/Computer\ Science/cse\ 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src {C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/definitions.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:00:52 on Jan 22,2016
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src" C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/definitions.sv 
+# -- Compiling package definitions
+# 
+# Top level modules:
+# 	--none--
+# End time: 23:00:52 on Jan 22,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Andrew/Desktop/School/Computer\ Science/cse\ 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src {C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/instr_mem.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:00:52 on Jan 22,2016
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src" C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/instr_mem.sv 
+# -- Compiling package instr_mem_sv_unit
+# -- Importing package definitions
+# -- Compiling module instr_mem
+# 
+# Top level modules:
+# 	instr_mem
+# End time: 23:00:52 on Jan 22,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Andrew/Desktop/School/Computer\ Science/cse\ 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src {C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/core.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:00:52 on Jan 22,2016
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src" C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/core.sv 
+# -- Compiling package core_sv_unit
+# -- Importing package definitions
+# -- Compiling module core
+# 
+# Top level modules:
+# 	core
+# End time: 23:00:52 on Jan 22,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Andrew/Desktop/School/Computer\ Science/cse\ 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src {C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/cl_state_machine.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:00:52 on Jan 22,2016
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src" C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/cl_state_machine.sv 
+# -- Compiling package cl_state_machine_sv_unit
+# -- Importing package definitions
+# -- Compiling module cl_state_machine
+# 
+# Top level modules:
+# 	cl_state_machine
+# End time: 23:00:52 on Jan 22,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Andrew/Desktop/School/Computer\ Science/cse\ 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src {C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/cl_decode.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:00:52 on Jan 22,2016
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src" C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/cl_decode.sv 
+# -- Compiling package cl_decode_sv_unit
+# -- Importing package definitions
+# -- Compiling module cl_decode
+# 
+# Top level modules:
+# 	cl_decode
+# End time: 23:00:53 on Jan 22,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Andrew/Desktop/School/Computer\ Science/cse\ 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src {C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/alu.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:00:53 on Jan 22,2016
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src" C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/alu.sv 
+# -- Compiling package alu_sv_unit
+# -- Importing package definitions
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 23:00:53 on Jan 22,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+cd {C:/Users/Andrew/Desktop/School/Computer Science/cse 141L/ucsdcse141l-labs-368c70ae0b2b/ucsdcse141l-labs-368c70ae0b2b/core/src/tb/core_tb}
+# reading C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini
+source compile.tcl
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:01:21 on Jan 22,2016
+# vlog -reportprogress 300 -work work ../../definitions.sv 
+# -- Compiling package definitions
+# 
+# Top level modules:
+# 	--none--
+# End time: 23:01:21 on Jan 22,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:01:21 on Jan 22,2016
+# vlog -reportprogress 300 -work work ../../alu.sv 
+# -- Compiling package alu_sv_unit
+# -- Importing package definitions
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 23:01:21 on Jan 22,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:01:21 on Jan 22,2016
+# vlog -reportprogress 300 -work work ../../cl_decode.sv 
+# -- Compiling package cl_decode_sv_unit
+# -- Importing package definitions
+# -- Compiling module cl_decode
+# 
+# Top level modules:
+# 	cl_decode
+# End time: 23:01:21 on Jan 22,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:01:21 on Jan 22,2016
+# vlog -reportprogress 300 -work work ../../cl_state_machine.sv 
+# -- Compiling package cl_state_machine_sv_unit
+# -- Importing package definitions
+# -- Compiling module cl_state_machine
+# 
+# Top level modules:
+# 	cl_state_machine
+# End time: 23:01:21 on Jan 22,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:01:21 on Jan 22,2016
+# vlog -reportprogress 300 -work work ../../core.sv 
+# -- Compiling package core_sv_unit
+# -- Importing package definitions
+# -- Compiling module core
+# 
+# Top level modules:
+# 	core
+# End time: 23:01:21 on Jan 22,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:01:21 on Jan 22,2016
+# vlog -reportprogress 300 -work work ../../core_flattened.sv 
+# -- Compiling package core_flattened_sv_unit
+# -- Importing package definitions
+# -- Compiling module core_flattened
+# 
+# Top level modules:
+# 	core_flattened
+# End time: 23:01:21 on Jan 22,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:01:22 on Jan 22,2016
+# vlog -reportprogress 300 -work work ../../data_mem.sv 
+# -- Compiling package data_mem_sv_unit
+# -- Importing package definitions
+# -- Compiling module data_mem
+# 
+# Top level modules:
+# 	data_mem
+# End time: 23:01:22 on Jan 22,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:01:22 on Jan 22,2016
+# vlog -reportprogress 300 -work work ../../disassemble.sv 
+# End time: 23:01:22 on Jan 22,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:01:22 on Jan 22,2016
+# vlog -reportprogress 300 -work work ../../instr_mem.sv 
+# -- Compiling package instr_mem_sv_unit
+# -- Importing package definitions
+# -- Compiling module instr_mem
+# 
+# Top level modules:
+# 	instr_mem
+# End time: 23:01:22 on Jan 22,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:01:22 on Jan 22,2016
+# vlog -reportprogress 300 -work work ../../net_packet_logger_s.sv 
+# -- Compiling package net_packet_logger_s_sv_unit
+# -- Importing package definitions
+# -- Compiling module network_packet_s_logger
+# 
+# Top level modules:
+# 	network_packet_s_logger
+# End time: 23:01:22 on Jan 22,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:01:22 on Jan 22,2016
+# vlog -reportprogress 300 -work work ../../reg_file.sv 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 23:01:22 on Jan 22,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:01:22 on Jan 22,2016
+# vlog -reportprogress 300 -work work core_tb.sv 
+# -- Compiling package core_tb_sv_unit
+# -- Importing package definitions
+# -- Compiling module core_tb
+# 
+# Top level modules:
+# 	core_tb
+# End time: 23:01:22 on Jan 22,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+source sim.tcl
+# vsim -gui "+altera" -l msim_transcript -do "core_run_msim_rtl_verilog.do" 
+# Start time: 23:01:27 on Jan 22,2016
+# Loading sv_std.std
+# Loading work.definitions
+# Loading work.core_tb_sv_unit
+# Loading work.core_tb
+# Loading work.data_mem_sv_unit
+# Loading work.data_mem
+# Loading work.core_flattened_sv_unit
+# Loading work.core_flattened
+# Loading work.core_sv_unit
+# Loading work.core
+# Loading work.instr_mem_sv_unit
+# Loading work.instr_mem
+# Loading work.cl_decode_sv_unit
+# Loading work.cl_decode
+# Loading work.reg_file
+# Loading work.alu_sv_unit
+# Loading work.alu
+# Loading work.cl_state_machine_sv_unit
+# Loading work.cl_state_machine
+# Loading work.net_packet_logger_s_sv_unit
+# Loading work.network_packet_s_logger
+# Unrecognized option: "-noupdate" ignored.
+# Group must be before any context items: -group reg_file
+run -all
+# --------VANILLA HAS BOOTED---------
+# PASS: 0x00000001          1 (CYCLE 0x00000c50       3152)
+# PASS: 0x00000002          2 (CYCLE 0x00000c57       3159)
+# PASS: 0x00000003          3 (CYCLE 0x00000c5e       3166)
+# PASS: 0x00000004          4 (CYCLE 0x00000c65       3173)
+# PASS: 0x00000005          5 (CYCLE 0x00000c6b       3179)
+# PASS: 0x00000006          6 (CYCLE 0x00000c79       3193)
+# PASS: 0x00000007          7 (CYCLE 0x00000c84       3204)
+# PASS: 0x00000008          8 (CYCLE 0x00000c94       3220)
+# PASS: 0x00000009          9 (CYCLE 0x00000c9b       3227)
+# PASS: 0x0000000a         10 (CYCLE 0x00000ca1       3233)
+# PASS: 0x0000000b         11 (CYCLE 0x00000ca7       3239)
+# PASS: 0x0000000c         12 (CYCLE 0x00000cb1       3249)
+# PASS: 0x0000000d         13 (CYCLE 0x00000cbc       3260)
+# PASS: 0x0000000e         14 (CYCLE 0x00000cc7       3271)
+# PASS: 0x0000000f         15 (CYCLE 0x00000cd2       3282)
+# PASS: 0x00000010         16 (CYCLE 0x00000cdd       3293)
+# PASS: 0x00000011         17 (CYCLE 0x00000ce7       3303)
+# PASS: 0x00000012         18 (CYCLE 0x00000cf1       3313)
+# PASS: 0x00000013         19 (CYCLE 0x00000cfb       3323)
+# {00000cfe} barrier OR changed from        0 to        2
+# {00000cff} barrier OR changed from        0 to        2
+# DONE: 0x00000013         19 (CYCLE 0x00000cff       3327)
+# Cycle Count:        3327
+# Instruction Count:         160
+# ** Note: $stop    : core_tb.sv(296)
+#    Time: 133160 ns  Iteration: 1  Instance: /core_tb
+# Break in Module core_tb at core_tb.sv line 296
+add wave -position insertpoint sim:/cl_decode_sv_unit/*
+# (vish-4014) No objects found matching '/cl_decode_sv_unit/*'.
+# End time: 15:22:51 on Jan 23,2016, Elapsed time: 16:21:24
+# Errors: 2, Warnings: 0
