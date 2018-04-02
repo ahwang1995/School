@@ -1,0 +1,194 @@
+CSE 12 Homework 5
+Andrew Hwang
+A11570188
+B00
+05/6/14
+
+Part 1
+I.	Bubble
+		A. java SortTimer random-strings.txt 0 2000 2000 10
+		I chose these testing parameters because the strings were sorted within a reasonable amount of time while still making the differences between the times are large enough to analyze. In order to get the worst case bound I incremented the words to be large enough to approach that worst case.
+
+		B. Document: random-strings.txt
+ sortAlg: 0
+=======================================
+  1:    2000 words in      37 milliseconds
+  2:    4000 words in     140 milliseconds
+  3:    6000 words in     297 milliseconds
+  4:    8000 words in     525 milliseconds
+  5:   10000 words in     840 milliseconds
+  6:   12000 words in    1201 milliseconds
+  7:   14000 words in    1682 milliseconds
+  8:   16000 words in    2254 milliseconds
+  9:   18000 words in    2831 milliseconds
+ 10:   20000 words in    3482 milliseconds
+
+		C. 	18000/6000 Words = 3
+			2831/297 milliseconds = 9.5
+			This sorting algorithm goes to O(n^2) in the worst case. This is because the ratios between the amount of words when compared to the ratio of the corresponding amount of milliseconds is n^2. When the ratio of words is n then the  because the corresponding ratios between words and milliseconds is about n^2. In this case
+
+II.	Insertion
+	A.	java SortTimer random-strings.txt 1 10000 10000 10
+		I chose these testing parameters because the strings were sorted within a reasonable amount of time while still making the differences between the times are large enough to analyze. In order to get the worst case bound I incremented the words to be large enough to approach that worst case.
+
+	B.	Document: random-strings.txt
+ sortAlg: 1
+=======================================
+  1:   10000 words in      13 milliseconds
+  2:   20000 words in      28 milliseconds
+  3:   30000 words in      59 milliseconds
+  4:   40000 words in     102 milliseconds
+  5:   50000 words in     157 milliseconds
+  6:   60000 words in     221 milliseconds
+  7:   70000 words in     298 milliseconds
+  8:   80000 words in     384 milliseconds
+  9:   90000 words in     495 milliseconds
+ 10:  100000 words in     603 milliseconds
+
+	C.	150000/50000 Words = 3
+		1427/156 milliseconds = 9.147
+		This sorting algorithm goes to O(n^2) in the worst case. This is because the ratios between the amount of words when compared to the ratio of the corresponding amount of milliseconds is n^2. When the ratio of words is n then the  because the corresponding ratios between words and milliseconds is about n^2.
+
+III.	Merge
+		A.	java SortTimer random-strings.txt 2 20000 20000 15
+			I chose these testing parameters because the strings were sorted within a reasonable amount of time while still making the differences between the times are large enough to analyze. In order to get the worst case bound I incremented the words to be large enough to approach that worst case. I also made the test run enough times to check if the data approaches a limit.
+
+		B.	Document: random-strings.txt
+ sortAlg: 2
+=======================================
+  1:   20000 words in      12 milliseconds
+  2:   40000 words in      16 milliseconds
+  3:   60000 words in      25 milliseconds
+  4:   80000 words in      37 milliseconds
+  5:  100000 words in      49 milliseconds
+  6:  120000 words in      57 milliseconds
+  7:  140000 words in      72 milliseconds
+  8:  160000 words in      79 milliseconds
+  9:  180000 words in      91 milliseconds
+ 10:  200000 words in     103 milliseconds
+ 11:  220000 words in     103 milliseconds
+ 12:  240000 words in     101 milliseconds
+ 13:  260000 words in     103 milliseconds
+ 14:  280000 words in     101 milliseconds
+ 15:  300000 words in     104 milliseconds
+
+		C.	200000/100000 Words = 2
+			103/49 milliseconds = 2.10
+			Since the data reaches a limit it has similar behavior to a log function. In order to get the worst case bound I analyzed the function where the data set first approached this limit, which was at row 10. When compared to row 5 the ratio given from the milliseconds is similar to that of nlog(n). 2log(2) is equal to 2, which is close to 2.10, and since this data seems to approach a limit later the worst case bound is  O(n*log(n)).
+
+IV.	Quick
+		A.	java SortTimer random-strings.txt 3 25000 25000 15
+			I chose these testing parameters because the strings were sorted within a reasonable amount of time while still making the differences between the times are large enough to analyze. In order to get the worst case bound I incremented the words to be large enough to approach that worst case. I also made the test run enough times to check if the data approaches a limit.
+
+		B.	Document: random-strings.txt
+ sortAlg: 3
+=======================================
+  1:   25000 words in      15 milliseconds
+  2:   50000 words in      19 milliseconds
+  3:   75000 words in      30 milliseconds
+  4:  100000 words in      43 milliseconds
+  5:  125000 words in      58 milliseconds
+  6:  150000 words in      68 milliseconds
+  7:  175000 words in      81 milliseconds
+  8:  200000 words in      96 milliseconds
+  9:  225000 words in      95 milliseconds
+ 10:  250000 words in      93 milliseconds
+ 11:  275000 words in      92 milliseconds
+ 12:  300000 words in      94 milliseconds
+ 13:  325000 words in      92 milliseconds
+ 14:  350000 words in      94 milliseconds
+ 15:  375000 words in      93 milliseconds
+
+		C.	200000/100000 Words = 2
+			96/43 milliseconds = 2.23
+			Since the data reaches a limit it has similar behavior to a log function. In order to get the worst case bound I analyzed the function where the data set first approached this limit, which was at row 8. When compared to row 4 the ratio given from the milliseconds is similar to that of nlog(n). 2log(2) is equal to 2, which is close to 2.23, and since this data seems to approach a limit later the worst case bound is  O(n*log(n)).
+
+Part 2
+I.	Bubble
+		A.	java -Xint SortTimer random-strings-sorted.txt 0 25000 25000 15
+			I chose these testing parameters because the strings were sorted within a reasonable amount of time while still making the differences between the times are large enough to analyze. The -Xint makes the test run without java optimization so the process of going through the array is not skipped. In order to get the worst case bound I incremented the words to be large enough to approach that worst case.
+
+		B.	Document: random-strings-sorted.txt
+ sortAlg: 0
+=======================================
+  1:   10000 words in       3 milliseconds
+  2:   20000 words in       6 milliseconds
+  3:   30000 words in       9 milliseconds
+  4:   40000 words in      13 milliseconds
+  5:   50000 words in      16 milliseconds
+  6:   60000 words in      19 milliseconds
+  7:   70000 words in      22 milliseconds
+  8:   80000 words in      25 milliseconds
+  9:   90000 words in      29 milliseconds
+ 10:  100000 words in      32 milliseconds
+
+		C.	The ratios between the words and milliseconds are both increasing at a constant rate. Since the milliseconds increases by about 3 for every 10000 words the entire time the function seems the bound of the function is O(n).
+
+II.	Insertion
+		A.	java -Xint SortTimer random-strings-sorted.txt 1 5000 5000 10
+			I chose these testing parameters because the strings were sorted within a reasonable amount of time while still making the differences between the times are large enough to analyze. The -Xint makes the test run without java optimization so the process of going through the array is not skipped. In order to get the worst case bound I incremented the words to be large enough to approach that worst case.
+
+		B.	Document: random-strings-sorted.txt
+ sortAlg: 1
+=======================================
+  1:    5000 words in       5 milliseconds
+  2:   10000 words in      10 milliseconds
+  3:   15000 words in      15 milliseconds
+  4:   20000 words in      20 milliseconds
+  5:   25000 words in      25 milliseconds
+  6:   30000 words in      30 milliseconds
+  7:   35000 words in      35 milliseconds
+  8:   40000 words in      40 milliseconds
+  9:   45000 words in      44 milliseconds
+ 10:   50000 words in      50 milliseconds
+
+		C.	The ratios between the words and milliseconds are both increasing at a constant rate. Since the milliseconds increases by about 5 for every 10000 words the entire time the function seems the bound of the function is O(n).
+
+III.	Merge
+		A.	java -Xint SortTimer random-strings-sorted.txt 2 5000 5000 10
+			I chose these testing parameters because the strings were sorted within a reasonable amount of time while still making the differences between the times are large enough to analyze. The -Xint makes the test run without java optimization so the process of going through the array is not skipped. In order to get the worst case bound I incremented the words to be large enough to approach that worst case.
+
+		B.	Document: random-strings-sorted.txt
+ sortAlg: 2
+=======================================
+  1:    5000 words in      32 milliseconds
+  2:   10000 words in      70 milliseconds
+  3:   15000 words in     108 milliseconds
+  4:   20000 words in     149 milliseconds
+  5:   25000 words in     190 milliseconds
+  6:   30000 words in     230 milliseconds
+  7:   35000 words in     272 milliseconds
+  8:   40000 words in     316 milliseconds
+  9:   45000 words in     361 milliseconds
+ 10:   50000 words in     406 milliseconds
+
+		C.	The ratios between the words and milliseconds are both increasing at a constant rate. Since the milliseconds increases by about 40 for every 10000 words the entire time the function seems the bound of the function is O(n).
+
+IV.`	Quick
+		A.	java -Xint SortTimer random-strings-sorted.txt 3 500 500 10
+			I chose these testing parameters because the strings were sorted within a reasonable amount of time while still making the differences between the times are large enough to analyze. The -Xint makes the test run without java optimization so the process of going through the array is not skipped. In order to get the worst case bound I incremented the words to be large enough to approach that worst case.
+
+		B.	Document: random-strings-sorted.txt
+ sortAlg: 3
+=======================================
+  1:     500 words in      30 milliseconds
+  2:    1000 words in     118 milliseconds
+  3:    1500 words in     261 milliseconds
+  4:    2000 words in     461 milliseconds
+  5:    2500 words in     722 milliseconds
+  6:    3000 words in    1037 milliseconds
+  7:    3500 words in    1405 milliseconds
+  8:    4000 words in    1810 milliseconds
+  9:    4500 words in    2283 milliseconds
+ 10:    5000 words in    2816 milliseconds
+
+		C.	4500/1500 words
+			2283/261 milliseconds
+			This sorting algorithm goes to O(n^2) in the worst case. This is because the ratios between the amount of words when compared to the ratio of the corresponding amount of milliseconds is n^2. When the ratio of words is n then the  because the corresponding ratios between words and milliseconds is about n^2.
+
+III.	For the first three they sort the array at a consistent pace while Quick has O(n^2) as the worst case, which is slower than when it sorts an unsorted array where the worst case is O(nlog(n)).
+Part 3
+	1. This method binarily searches an arrayList to see where to insert a target.
+	2. The binary search method is used to find the location at which the target will be inserted.
+	3. Classical insertion does not create a new array and just modifies elements within the same array so it is O(1).
+	4. The modified insertion uses a new array with the binary search so it is O(n).

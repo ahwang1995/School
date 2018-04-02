@@ -1,0 +1,91 @@
+CSE 12 Homework 5
+Andrew Hwang
+A11570188
+B00
+05/14/14
+
+Part 2
+I.	Heap
+	java -Xint SortTimer2 random-strings.txt 4 1000 1000 10
+	I chose these testing parameters because the strings were sorted within a reasonable amount of time while still making the differences between the times are large enough to analyze. The -Xint makes the test run without java optimization so the process of going through the array is not skipped. In order to get the worst case bound I incremented the words to be large enough to approach that worst case.
+	A.	 sortAlg: 4
+=======================================
+  1:    1000 words in      98 milliseconds
+  2:    2000 words in     365 milliseconds
+  3:    3000 words in    1122 milliseconds
+  4:    4000 words in    1410 milliseconds
+  5:    5000 words in    1533 milliseconds
+  6:    6000 words in    4410 milliseconds
+  7:    7000 words in    5050 milliseconds
+  8:    8000 words in    5520 milliseconds
+  9:    9000 words in    5814 milliseconds
+ 10:   10000 words in    5962 milliseconds
+	B.	8000/2000 words = 4 = n
+		5520/365 milliseconds = 15.12 ~= n^2
+		8000/4000 words = 2 = m
+		5520/1410 milliseconds = 3.914 ~= m^2
+		This sorting algorithm goes to O(n^2) in the worst case. This is because the ratios between the amount of words when compared to the ratio of the corresponding amount of milliseconds is n^2. When the ratio of words is n then the  because the corresponding ratios between words and milliseconds is about n^2.
+
+II.	Insertion
+	java SortTimer random-strings.txt 1 10000 10000 10
+	I chose these testing parameters because the strings were sorted within a reasonable amount of time while still making the differences between the times are large enough to analyze. In order to get the worst case bound I incremented the words to be large enough to approach that worst case.
+
+	A.	Document: random-strings.txt
+ sortAlg: 1
+=======================================
+  1:   10000 words in      13 milliseconds
+  2:   20000 words in      28 milliseconds
+  3:   30000 words in      59 milliseconds
+  4:   40000 words in     102 milliseconds
+  5:   50000 words in     157 milliseconds
+  6:   60000 words in     221 milliseconds
+  7:   70000 words in     298 milliseconds
+  8:   80000 words in     384 milliseconds
+  9:   90000 words in     495 milliseconds
+ 10:  100000 words in     603 milliseconds
+
+	B.	150000/50000 Words = 3
+		1427/156 milliseconds = 9.147
+		This sorting algorithm goes to O(n^2) in the worst case. This is because the ratios between the amount of words when compared to the ratio of the corresponding amount of milliseconds is n^2. When the ratio of words is n then the  because the corresponding ratios between words and milliseconds is about n^2.
+
+Part 2
+I.	Heap
+	java -Xint SortTimer2 random-strings-sorted.txt 4 1000 1000 10
+	I chose these testing parameters because the strings were sorted within a reasonable amount of time while still making the differences between the times are large enough to analyze. The -Xint makes the test run without java optimization so the process of going through the array is not skipped. In order to get the worst case bound I incremented the words to be large enough to approach that worst case.
+	A.	 sortAlg: 4
+=======================================
+  1:    1000 words in      96 milliseconds
+  2:    2000 words in     363 milliseconds
+  3:    3000 words in    1117 milliseconds
+  4:    4000 words in    1402 milliseconds
+  5:    5000 words in    1525 milliseconds
+  6:    6000 words in    4407 milliseconds
+  7:    7000 words in    5031 milliseconds
+  8:    8000 words in    5498 milliseconds
+  9:    9000 words in    5794 milliseconds
+ 10:   10000 words in    5955 milliseconds
+
+	B.	This sorting algorithm goes to O(n^2) in the worst case. This is because the ratios between the amount of words when compared to the ratio of the corresponding amount of milliseconds is n^2. When the ratio of words is n then the  because the corresponding ratios between words and milliseconds is about n^2.
+
+II.	Insertion
+		java -Xint SortTimer random-strings-sorted.txt 1 5000 5000 10
+		I chose these testing parameters because the strings were sorted within a reasonable amount of time while still making the differences between the times are large enough to analyze. The -Xint makes the test run without java optimization so the process of going through the array is not skipped. In order to get the worst case bound I incremented the words to be large enough to approach that worst case.
+
+		A.	Document: random-strings-sorted.txt
+ sortAlg: 1
+=======================================
+  1:    5000 words in       5 milliseconds
+  2:   10000 words in      10 milliseconds
+  3:   15000 words in      15 milliseconds
+  4:   20000 words in      20 milliseconds
+  5:   25000 words in      25 milliseconds
+  6:   30000 words in      30 milliseconds
+  7:   35000 words in      35 milliseconds
+  8:   40000 words in      40 milliseconds
+  9:   45000 words in      44 milliseconds
+ 10:   50000 words in      50 milliseconds
+
+		B.	The ratios between the words and milliseconds are both increasing at a constant rate. Since the milliseconds increases by about 5 for every 10000 words the entire time the function seems the bound of the function is O(n).
+
+Part 3
+The insertion sort runs faster in the case of a presorted array because its worst case is O(n) while the worst case for heapsort is O(n^2). The reason that heapsort is not very different when comparing a list of sorted and unsorted strings is that it still goes through the same process of trickingling down every element if the list is already sorted.

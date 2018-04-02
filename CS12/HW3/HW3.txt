@@ -1,0 +1,163 @@
+CSE 12 Homework 3
+Andrew Hwang
+A11570188
+B00
+4/20/14
+
+Part 1A
+1. True
+2. True
+3. False
+4. False
+5. False
+6. True
+7. False
+8. True
+9. False
+10. False
+11. True
+12. True
+13. True
+14. True
+15. False
+16. True
+17. False
+18. True
+
+Part 1B
+1. Running Time: O(n).
+Explanation: There is a single loop that runs (1/2)n times. The loop executes 1 instruction in the header and 1 in the body every time it runs. The total amount of instructions is 2*(1/2)n + 1 which = n+1 = O(n).
+
+2. Running Time: O(log(n))
+Explanation: The header of the for loop runs log base 2 of n times because it is incremented by multiplying 2 to the last index. This makes the current index become exponentially larger so the inverse would be true for how many times it runs. log base 2 of n = O(log(n))
+
+3. Running Time: O(n^2).
+Explanation: There is one instruction within the nested loop and the inner loop excecutes 2n+1 times while the outer loop executes n times. Since this is a nested loop the loop will run (2n+1)(n)+1 (for the last loop check) times. 2n^2 + n + 1 = O(n^2)
+
+4. Running Time: O(n).
+Explanation: Each loop has one instuction inside and will have up to 2n+1 executions, so in the worst case both of the loops will run a total of 4n+2 times. 
+
+5. Running Time: O(n).
+Explanation: The loop header executes 2n + 1 times including the last loop check, so the body of the loop which has one instruction will run 2n times. The total number of instructions is 4n+1 which = O(n).
+
+6. Running Time: O(n^2)
+Explanation: The loop header has n^2 + 1 instructions including the last loop check, so the body of the loop which has one instruction can execture up to n^2 times. The total amount of instructions is n^2 + 1 + n^2 which is 2n^2 + 1 which = O(n^2).
+
+7. Running Time: O(n^3)
+Explanation: The outer loop header runs n + 1 times including the last loop check. The inner loop header runs n^2 + 1 times including the last loop check each time that it runs and the body of the inner loop executes n^2 times every time. n^2 + 1 + n^2 = 2n^2 + 1 so there are 2n^2 instructions each time the inner loop runs. n*(2n^2 + 1) + 1 = 2n^3 + n + 1 so the nested loop will have up to 2n^3 + n + 1 instructions, which = O(n^3).
+
+8. Running Time: O(n)
+Explanation: The outer loop header exectures a total of n + 1 times. The inner loop header instruction executes up to 10000 + 1 times with the single instruction in the body executing up to 10000 times each time the outer loop is run. The inner loop and body can execute a total of 20000 + 1 instructions each time the loop is run. The total amount of instructions is (n)*(20000 + 1) + 1 = 20001n + 1 = O(n).
+
+Part 2
+1. Running Time: Omega(n)
+Explanation: A loop that goes through the original list can be created which has n instructions. The inside of the loop must increment the index n times, get the original list's data n times, and add to the newly created list n times. Since there are about 4n instructions and 4n = Omega(n), a copy of the list is Omega(n).
+
+2. Running Time: Omega(1)
+Explanation: There is a pointer to the tail node in the list, so adding an element involves creating a new node, setting the links in the new node, and changing the values of the tail references. There are around 10 steps to perform and 10 = Omega(1).
+
+3. Running Time: Omega(1)
+Explanation: There is a pointer at the head of the list, so the first node can be easily accessed. In order to remove this node the head references of the head and the second value in the list have to be updated. The removed node should point to nothing. Since the amount of steps to do this is a constant around 10, c=Omega(1) and 10 = Omega(1).
+
+4. Running Time: Omega(1)
+Explanation: There is a pointer at the tail of the list so the last node can be accessed through the tail. In order to remove the last node the tail references and second to last node's links must be updated. Since the amount of steps to do this is a constant around 10, c=Omega(1) and 10 = Omega(1).
+
+5. Running Time: Omega(n)
+Explanation: In order to check if a list contains some value V a for loop is made which iterated through up to n elements. In the body of the loop the value which is being searched will be compared with the current value in an if loop based on the index up to n times. The index will also increment up to n times. In the worst case there will be around 3n + c instructions where c is a constant. 3n + c = Omega(n).
+
+Part 3
+1.
+A. wc medium-wordlist.txt
+119805  119805 1146872 medium-wordlist.txt
+The second number that is listed is the amount of words in the text file
+B. main()
+	-Creates the paramenters that will be entered into doLoops, which are specified in usage() and runs the doLoops() method.
+	usage()
+		-prints out what each paremeter represents if a dictionary and document are not specified.
+
+	doLoops(MyLinkedList, wordlist, input file, loop bounds and steps) 
+		-This method creates a string collection storage based on the type of storage that is enteded into the parameter. The doWork method is called and totalTime stores the value that is returned.The results are then printed in a table.
+
+		doWork(Collection<String> storage, String wordlist,String document, int numwords) 
+			-This method uses readDictionary in order to remove the punctuation from a list of words. This method uses trimPunctuation to remove the punctuation of the file to be compared to and checks if each word in items contains one of the words given in the compared file. If the word is there then good is incremented and the goodword is added to the goodlist, if the word is not there the same will hapen for bad and badwords. The counter is incremented every time the test for good and bad words is done and every time the counter is a multiple of 1000 the amount of words read and the time is printed. The totalTime is returned.
+
+			readDictionary( Collection<String> items, String wordlist )
+				-This method takes in a wordlist string and removes the punction and numbers by using the trimPunctuation method. The words with removed punctuations then are copied into the string collection items.
+				
+				trimPunctuation(String word)
+					-This method removes all of the punctuations and numbers from a string
+
+			trimPunctuation(String input.next())
+				-This method removes all of the punctuations and numbers from a string
+
+	doLoops(MRUList, <same parameters as previous call) 
+
+		<same call outline as above, detail is not needed>
+
+C. The class hashSet is imported from java.util and implements collectionand hashSet extends Set. Since good increments every time a good word is found and goodwords.size() increments every time a good word is added the values are different.
+D. I do not think that sorting the file alphabetically will make a difference in the overall performance. Although testing the first half of the file may be faster because both files are sorted alphabetically, testing the last half of the file will take longer due to the alphabetical order. When the word is not in the document the contains() method takes just as long as it normally would.
+
+2. [cs12sda@acs-cseb250-07]:HW3:210$ java CollectionTimer small-wordlist.txt pride-and-prejudice.txt
+Wordlist: small-wordlist.txt  Document: pride-and-prejudice.txt
+Class: MyLinkedList
+=======================================
+  1:    5000 words in     414 milliseconds
+  2:   10000 words in     836 milliseconds
+  3:   15000 words in    1235 milliseconds
+  4:   20000 words in    1835 milliseconds
+  5:   25000 words in    1682 milliseconds
+
+Wordlist: small-wordlist.txt  Document: pride-and-prejudice.txt
+Class: MRUList
+=======================================
+  1:    5000 words in     168 milliseconds
+  2:   10000 words in     300 milliseconds
+  3:   15000 words in     434 milliseconds
+  4:   20000 words in     478 milliseconds
+  5:   25000 words in     556 milliseconds
+
+3. Yes, I expect the worst case run time to double for MyLinkedList because there are twice as many words being checked. Although the runtime will increase for the MRUList, it will most likely not double because many of the goodwords will already be at the start of the list, so the test will run faster relative to the amount of words each time.
+
+4. 
+Wordlist: medium-wordlist.txt  Document: pride-and-prejudice.txt
+Class: MyLinkedList
+=======================================
+  1:    5000 words in    6195 milliseconds
+  2:   10000 words in   28700 milliseconds
+  3:   15000 words in   24120 milliseconds
+  4:   20000 words in   28741 milliseconds
+  5:   25000 words in   25992 milliseconds
+
+Wordlist: medium-wordlist.txt  Document: pride-and-prejudice.txt
+Class: MRUList
+=======================================
+  1:    5000 words in    3827 milliseconds
+  2:   10000 words in    5724 milliseconds
+  3:   15000 words in    8212 milliseconds
+  4:   20000 words in    9769 milliseconds
+  5:   25000 words in   10724 milliseconds
+
+It will take much longer for MyLinkedList because the entire medium words list is checked and compared to the words in pride-and-prejudice.txt. Since the medium list is 10 times larger than the small list, the worst case for each word that is checked can take 10 times longer than the worst case for each word that is checked in the small list. Since there arer 5000 words checked, the test can take much longer.
+The MRU list runs much faster as it goes on because the common words are already at the beginning of the list, so the entire list does not have to be tested since the goodwords will be found early on.
+5. [cs12sda@acs-cseb250-07]:HW3:211$ java CollectionTimer pride-and-prejudice.txt pride-and-prejudice.txt
+Wordlist: pride-and-prejudice.txt  Document: pride-and-prejudice.txt
+Class: MyLinkedList
+=======================================
+  1:    5000 words in      54 milliseconds
+  2:   10000 words in     122 milliseconds
+  3:   15000 words in     175 milliseconds
+  4:   20000 words in     459 milliseconds
+  5:   25000 words in     407 milliseconds
+
+Wordlist: pride-and-prejudice.txt  Document: pride-and-prejudice.txt
+Class: MRUList
+=======================================
+  1:    5000 words in    1106 milliseconds
+  2:   10000 words in    2877 milliseconds
+  3:   15000 words in    2045 milliseconds
+  4:   20000 words in    4194 milliseconds
+  5:   25000 words in    4708 milliseconds
+
+The MyLinkedList starts out fast and becomes slower relative to the amount of words checked. This is because in the beginning the words that are being found are in the beginning of the wordlist, but the words that are being searched later are further on in the wordlist so more words would have to be checked.
+
+The MRUList becomes slower because the words that are added to the front of the list are the words that were tested in reverse order. As more words are tested, words that have already been found end up later in the list rather than staying in the front where the order of the words correspond to each other.
