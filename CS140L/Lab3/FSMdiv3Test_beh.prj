@@ -1,0 +1,3 @@
+verilog work "FSMdiv3.v"
+verilog work "FSMdiv3Test.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

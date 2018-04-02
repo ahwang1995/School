@@ -1,0 +1,9 @@
+[Inputs]
+Clk
+=In[11:0]=
+[Outputs]
+=Result[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel TinyCpu
+

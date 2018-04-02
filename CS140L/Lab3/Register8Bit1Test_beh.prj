@@ -1,0 +1,5 @@
+verilog work "Dlatch1A.v"
+verilog work "DFlipFlop1B.v"
+verilog work "Register8Bit1C.v"
+verilog work "Register8Bit1Test.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

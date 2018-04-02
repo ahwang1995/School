@@ -1,0 +1,640 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: TinyCpu.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TinyCpu.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TinyCpu"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : TinyCpu
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Andrew\Desktop\School\Computer Science\CS140L\Lab4\ShiftRight.v" into library work
+Parsing module <ShiftRight>.
+Analyzing Verilog file "C:\Users\Andrew\Desktop\School\Computer Science\CS140L\Lab4\ShiftLeft.v" into library work
+Parsing module <ShiftLeft>.
+Analyzing Verilog file "C:\Users\Andrew\Desktop\School\Computer Science\CS140L\Lab4\Comparator.v" into library work
+Parsing module <Comparator>.
+Analyzing Verilog file "C:\Users\Andrew\Desktop\School\Computer Science\CS140L\Lab4\Adder.v" into library work
+Parsing module <Adder>.
+Analyzing Verilog file "C:\Users\Andrew\Desktop\School\Computer Science\CS140L\Lab4\Register8bit.v" into library work
+Parsing module <Register8bit>.
+Analyzing Verilog file "C:\Users\Andrew\Desktop\School\Computer Science\CS140L\Lab4\Mux8to1.v" into library work
+Parsing module <Mux8to1>.
+Analyzing Verilog file "C:\Users\Andrew\Desktop\School\Computer Science\CS140L\Lab4\Mux2to1.v" into library work
+Parsing module <Mux2to1>.
+Analyzing Verilog file "C:\Users\Andrew\Desktop\School\Computer Science\CS140L\Lab4\InstructionDecoder.v" into library work
+Parsing module <InstructionDecoder>.
+Analyzing Verilog file "C:\Users\Andrew\Desktop\School\Computer Science\CS140L\Lab4\BusSplit.v" into library work
+Parsing module <BusSplit>.
+Analyzing Verilog file "C:\Users\Andrew\Desktop\School\Computer Science\CS140L\Lab4\ALU.v" into library work
+Parsing module <Alu>.
+Analyzing Verilog file "C:\Users\Andrew\Desktop\School\Computer Science\CS140L\Lab4\TinyCpu.v" into library work
+Parsing module <TinyCpu>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <TinyCpu>.
+
+Elaborating module <BusSplit>.
+
+Elaborating module <InstructionDecoder>.
+
+Elaborating module <Register8bit>.
+
+Elaborating module <Mux2to1>.
+
+Elaborating module <Alu>.
+
+Elaborating module <Adder>.
+
+Elaborating module <ShiftLeft>.
+
+Elaborating module <ShiftRight>.
+
+Elaborating module <Comparator>.
+
+Elaborating module <Mux8to1>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <TinyCpu>.
+    Related source file is "C:\Users\Andrew\Desktop\School\Computer Science\CS140L\Lab4\TinyCpu.v".
+    Summary:
+	no macro.
+Unit <TinyCpu> synthesized.
+
+Synthesizing Unit <BusSplit>.
+    Related source file is "C:\Users\Andrew\Desktop\School\Computer Science\CS140L\Lab4\BusSplit.v".
+    Summary:
+	no macro.
+Unit <BusSplit> synthesized.
+
+Synthesizing Unit <InstructionDecoder>.
+    Related source file is "C:\Users\Andrew\Desktop\School\Computer Science\CS140L\Lab4\InstructionDecoder.v".
+        clear = 4'b0000
+        Move1 = 4'b0001
+        Move2 = 4'b0010
+        Storeout = 4'b0011
+        add = 4'b0100
+        Shiftleft = 4'b0101
+        Shiftright = 4'b0110
+        And = 4'b0111
+        Or = 4'b1000
+        XOR = 4'b1001
+        NAND = 4'b1010
+        Compare = 4'b1011
+WARNING:Xst:737 - Found 1-bit latch for signal <Clear>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <EnableA>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <EnableB>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <EnableOut>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <S0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <S1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <S2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <S3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   8 Latch(s).
+	inferred   9 Multiplexer(s).
+Unit <InstructionDecoder> synthesized.
+
+Synthesizing Unit <Register8bit>.
+    Related source file is "C:\Users\Andrew\Desktop\School\Computer Science\CS140L\Lab4\Register8bit.v".
+    Found 8-bit register for signal <Qout>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <Register8bit> synthesized.
+
+Synthesizing Unit <Mux2to1>.
+    Related source file is "C:\Users\Andrew\Desktop\School\Computer Science\CS140L\Lab4\Mux2to1.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux2to1> synthesized.
+
+Synthesizing Unit <Alu>.
+    Related source file is "C:\Users\Andrew\Desktop\School\Computer Science\CS140L\Lab4\ALU.v".
+    Summary:
+Unit <Alu> synthesized.
+
+Synthesizing Unit <Adder>.
+    Related source file is "C:\Users\Andrew\Desktop\School\Computer Science\CS140L\Lab4\Adder.v".
+    Found 8-bit adder for signal <Out0> created at line 24.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Adder> synthesized.
+
+Synthesizing Unit <ShiftLeft>.
+    Related source file is "C:\Users\Andrew\Desktop\School\Computer Science\CS140L\Lab4\ShiftLeft.v".
+WARNING:Xst:647 - Input <A<7:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <ShiftLeft> synthesized.
+
+Synthesizing Unit <ShiftRight>.
+    Related source file is "C:\Users\Andrew\Desktop\School\Computer Science\CS140L\Lab4\ShiftRight.v".
+WARNING:Xst:647 - Input <A<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <ShiftRight> synthesized.
+
+Synthesizing Unit <Comparator>.
+    Related source file is "C:\Users\Andrew\Desktop\School\Computer Science\CS140L\Lab4\Comparator.v".
+    Found 8-bit comparator lessequal for signal <n0000> created at line 25
+    Summary:
+	inferred   1 Comparator(s).
+Unit <Comparator> synthesized.
+
+Synthesizing Unit <Mux8to1>.
+    Related source file is "C:\Users\Andrew\Desktop\School\Computer Science\CS140L\Lab4\Mux8to1.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <Y<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Y<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Y<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Y<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Y<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Y<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Y<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Y<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   8 Latch(s).
+	inferred  49 Multiplexer(s).
+Unit <Mux8to1> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 3
+ 8-bit register                                        : 3
+# Latches                                              : 16
+ 1-bit latch                                           : 16
+# Comparators                                          : 1
+ 8-bit comparator lessequal                            : 1
+# Multiplexers                                         : 59
+ 1-bit 2-to-1 multiplexer                              : 57
+ 8-bit 2-to-1 multiplexer                              : 2
+# Xors                                                 : 1
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 24
+ Flip-Flops                                            : 24
+# Comparators                                          : 1
+ 8-bit comparator lessequal                            : 1
+# Multiplexers                                         : 59
+ 1-bit 2-to-1 multiplexer                              : 57
+ 8-bit 2-to-1 multiplexer                              : 2
+# Xors                                                 : 1
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:3001 - This design contains one or more registers or latches with an active
+   asynchronous set and asynchronous reset. While this circuit can be built,
+   it creates a sub-optimal implementation in terms of area, power and
+   performance. For a more optimal implementation Xilinx highly recommends
+   one of the following:
+
+          1) Remove either the set or reset from all registers and latches if
+             not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Artix7 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    EnableA in unit <InstructionDecoder>
+    S3 in unit <InstructionDecoder>
+    S2 in unit <InstructionDecoder>
+    Clear in unit <InstructionDecoder>
+    EnableOut in unit <InstructionDecoder>
+    EnableB in unit <InstructionDecoder>
+    S0 in unit <InstructionDecoder>
+    S1 in unit <InstructionDecoder>
+
+
+Optimizing unit <TinyCpu> ...
+
+Optimizing unit <Register8bit> ...
+
+Optimizing unit <InstructionDecoder> ...
+
+Optimizing unit <Alu> ...
+
+Optimizing unit <Mux8to1> ...
+WARNING:Xst:1294 - Latch <Y_7> is equivalent to a wire in block <Mux8to1>.
+WARNING:Xst:1294 - Latch <Y_6> is equivalent to a wire in block <Mux8to1>.
+WARNING:Xst:1294 - Latch <Y_5> is equivalent to a wire in block <Mux8to1>.
+WARNING:Xst:1294 - Latch <Y_4> is equivalent to a wire in block <Mux8to1>.
+WARNING:Xst:1294 - Latch <Y_3> is equivalent to a wire in block <Mux8to1>.
+WARNING:Xst:1294 - Latch <Y_0> is equivalent to a wire in block <Mux8to1>.
+WARNING:Xst:1294 - Latch <Y_2> is equivalent to a wire in block <Mux8to1>.
+WARNING:Xst:1294 - Latch <Y_1> is equivalent to a wire in block <Mux8to1>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TinyCpu, actual ratio is 0.
+FlipFlop RegisterA/Qout_7 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop RegisterA/Qout_6 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop RegisterA/Qout_5 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop RegisterA/Qout_4 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop RegisterA/Qout_3 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop RegisterA/Qout_2 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop RegisterA/Qout_1 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop RegisterA/Qout_0 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : TinyCpu.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 110
+#      GND                         : 1
+#      LUT2                        : 16
+#      LUT3                        : 12
+#      LUT4                        : 10
+#      LUT5                        : 16
+#      LUT6                        : 31
+#      MUXCY                       : 7
+#      MUXF7                       : 9
+#      XORCY                       : 8
+# FlipFlops/Latches                : 40
+#      FDRE                        : 32
+#      LD                          : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 36
+#      IBUF                        : 12
+#      OBUF                        : 24
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              32  out of  126800     0%  
+ Number of Slice LUTs:                   85  out of  63400     0%  
+    Number used as Logic:                85  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     90
+   Number with an unused Flip Flop:      58  out of     90    64%  
+   Number with an unused LUT:             5  out of     90     5%  
+   Number of fully used LUT-FF pairs:    27  out of     90    30%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                          37
+ Number of bonded IOBs:                  37  out of    210    17%  
+    IOB Flip Flops/Latches:               8
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------------+------------------------------------+-------+
+Clock Signal                                            | Clock buffer(FF name)              | Load  |
+--------------------------------------------------------+------------------------------------+-------+
+Clk                                                     | BUFGP                              | 32    |
+InstructionDecoder/Clear_G(InstructionDecoder/Clear_G:O)| NONE(*)(InstructionDecoder/EnableA)| 4     |
+InstructionDecoder/S1_G(InstructionDecoder/S3_G:O)      | NONE(*)(InstructionDecoder/S3)     | 3     |
+InstructionDecoder/S0_G(InstructionDecoder/S0_G:O)      | NONE(*)(InstructionDecoder/S0)     | 1     |
+--------------------------------------------------------+------------------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.618ns (Maximum Frequency: 381.913MHz)
+   Minimum input arrival time before clock: 0.701ns
+   Maximum output required time after clock: 0.700ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 2.618ns (frequency: 381.913MHz)
+  Total number of paths / destination ports: 410 / 16
+-------------------------------------------------------------------------
+Delay:               2.618ns (Levels of Logic = 4)
+  Source:            RegisterA/Qout_2 (FF)
+  Destination:       RegisterOut/Qout_7 (FF)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: RegisterA/Qout_2 to RegisterOut/Qout_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             7   0.361   0.721  RegisterA/Qout_2 (RegisterA/Qout_2)
+     LUT6:I0->O            1   0.097   0.279  ALU1/RegComp<0>3 (ALU1/RegComp<0>1)
+     MUXF7:S->O            1   0.335   0.295  ALU1/RegComp<0>1 (ALU1/RegComp<0>2)
+     LUT5:I4->O            8   0.097   0.327  ALU1/RegComp<0>21 (RegComp<0>)
+     LUT5:I4->O            1   0.097   0.000  Mux8to1/Mmux_Y[7]_A[7]_mux_31_OUT<0>33 (muxOut<0>)
+     FDRE:D                    0.008          RegisterOut/Qout_0
+    ----------------------------------------
+    Total                      2.618ns (0.995ns logic, 1.623ns route)
+                                       (38.0% logic, 62.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              0.495ns (Levels of Logic = 2)
+  Source:            In<7> (PAD)
+  Destination:       RegisterB/Qout_7 (FF)
+  Destination Clock: Clk rising
+
+  Data Path: In<7> to RegisterB/Qout_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.001   0.389  In_7_IBUF (In_7_IBUF)
+     LUT3:I1->O            1   0.097   0.000  Mux2to1/Mmux_Breg81 (dataB<7>)
+     FDRE:D                    0.008          RegisterB/Qout_7
+    ----------------------------------------
+    Total                      0.495ns (0.106ns logic, 0.389ns route)
+                                       (21.4% logic, 78.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'InstructionDecoder/Clear_G'
+  Total number of paths / destination ports: 15 / 4
+-------------------------------------------------------------------------
+Offset:              0.701ns (Levels of Logic = 2)
+  Source:            In<10> (PAD)
+  Destination:       InstructionDecoder/EnableOut (LATCH)
+  Destination Clock: InstructionDecoder/Clear_G falling
+
+  Data Path: In<10> to InstructionDecoder/EnableOut
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   0.001   0.603  In_10_IBUF (In_10_IBUF)
+     LUT4:I0->O            1   0.097   0.000  InstructionDecoder/EnableOut_D (InstructionDecoder/EnableOut_D)
+     LD:D                     -0.028          InstructionDecoder/EnableOut
+    ----------------------------------------
+    Total                      0.701ns (0.098ns logic, 0.603ns route)
+                                       (14.0% logic, 86.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'InstructionDecoder/S1_G'
+  Total number of paths / destination ports: 8 / 3
+-------------------------------------------------------------------------
+Offset:              0.637ns (Levels of Logic = 2)
+  Source:            In<9> (PAD)
+  Destination:       InstructionDecoder/S2 (LATCH)
+  Destination Clock: InstructionDecoder/S1_G falling
+
+  Data Path: In<9> to InstructionDecoder/S2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.001   0.539  In_9_IBUF (In_9_IBUF)
+     LUT3:I0->O            1   0.097   0.000  InstructionDecoder/S2_D (InstructionDecoder/S2_D)
+     LD:D                     -0.028          InstructionDecoder/S2
+    ----------------------------------------
+    Total                      0.637ns (0.098ns logic, 0.539ns route)
+                                       (15.4% logic, 84.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'InstructionDecoder/S0_G'
+  Total number of paths / destination ports: 4 / 1
+-------------------------------------------------------------------------
+Offset:              0.673ns (Levels of Logic = 2)
+  Source:            In<8> (PAD)
+  Destination:       InstructionDecoder/S0 (LATCH)
+  Destination Clock: InstructionDecoder/S0_G falling
+
+  Data Path: In<8> to InstructionDecoder/S0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   0.001   0.575  In_8_IBUF (In_8_IBUF)
+     LUT4:I0->O            1   0.097   0.000  InstructionDecoder/S0_D (InstructionDecoder/S0_D)
+     LD:D                     -0.028          InstructionDecoder/S0
+    ----------------------------------------
+    Total                      0.673ns (0.098ns logic, 0.575ns route)
+                                       (14.6% logic, 85.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              0.700ns (Levels of Logic = 1)
+  Source:            RegisterB/Qout_5 (FF)
+  Destination:       RegB<5> (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: RegisterB/Qout_5 to RegB<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            14   0.361   0.339  RegisterB/Qout_5 (RegisterB/Qout_5)
+     OBUF:I->O                 0.000          RegB_5_OBUF (RegB<5>)
+    ----------------------------------------
+    Total                      0.700ns (0.361ns logic, 0.339ns route)
+                                       (51.6% logic, 48.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Clk
+--------------------------+---------+---------+---------+---------+
+                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------+---------+---------+---------+---------+
+Clk                       |    2.618|         |         |         |
+InstructionDecoder/Clear_G|         |    1.719|         |         |
+InstructionDecoder/S0_G   |         |    1.120|         |         |
+InstructionDecoder/S1_G   |         |    2.772|         |         |
+--------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.43 secs
+ 
+--> 
+
+Total memory usage is 294492 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   27 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
